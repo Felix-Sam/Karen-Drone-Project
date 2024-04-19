@@ -10,7 +10,6 @@ model = get_model(model_id="drone_07/1")
 
 
 with st.sidebar:
-    sidebar = { "backgroundColor": "#FFFFFF", "contrast": 1.2 }
     st.title('AI Zend MVP Project')
     st.image('logo.jpeg')
     options = st.radio('SELECT',['drones','birds'])
