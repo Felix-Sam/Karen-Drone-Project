@@ -15,9 +15,9 @@ with st.sidebar:
     options = st.radio('SELECT',['drones','birds'])
     st.title('About this app')
     st.markdown("This app helps you detect birds or drones by uploading an image of it.")
-st.write(options)
+
 if options == 'drones':
-    st.title('Detect Drones')
+    st.header(f':red[{options.upper()} SELECTED]')
     st.image('drones.jpeg')
     image = st.file_uploader("Take a picture")
     if image:
@@ -33,6 +33,7 @@ if options == 'drones':
         annotated_image = label_annotator.annotate(
         scene=annotated_image, detections=detections)
         st.image(annotated_image,use_column_width=True)
+        st.subheader(':red[_Drone_ Description Coming Soon :sunglasses:]')
         
 
 
