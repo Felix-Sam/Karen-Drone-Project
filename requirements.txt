@@ -1,7 +1,4 @@
 streamlit
-ultralytics
-inference-sdk
-cvzone
 supervision
 inference
 opencv-python==4.5.4.60

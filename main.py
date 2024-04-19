@@ -8,7 +8,7 @@ import supervision as sv
 
 model = get_model(model_id="drone_07/1")
 
-backgroundColor = "#F0F0F0"
+
 with st.sidebar:
     sidebar = { "backgroundColor": "#FFFFFF", "contrast": 1.2 }
     st.title('AI Zend MVP Project')
