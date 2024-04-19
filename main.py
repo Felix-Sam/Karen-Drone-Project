@@ -25,8 +25,8 @@ if options == 'drones':
         img_array = np.array(img)
         results = model_drone.infer(img_array)
         detections = sv.Detections.from_inference(results[0].dict(by_alias=True, exclude_none=True))
-        bounding_box_annotator = sv.BoundingBoxAnnotator(thickness=5)
-        label_annotator = sv.LabelAnnotator(text_thickness=5,text_scale=4)
+        bounding_box_annotator = sv.BoundingBoxAnnotator(thickness=3)
+        label_annotator = sv.LabelAnnotator(text_thickness=3,text_scale=2)
 
         annotated_image = bounding_box_annotator.annotate(
         scene=img_array, detections=detections)
@@ -45,8 +45,8 @@ if options == 'birds':
         img_array = np.array(img)
         results = model_birds.infer(img_array)
         detections = sv.Detections.from_inference(results[0].dict(by_alias=True, exclude_none=True))
-        bounding_box_annotator = sv.BoundingBoxAnnotator(thickness=5)
-        label_annotator = sv.LabelAnnotator(text_thickness=5,text_scale=4)
+        bounding_box_annotator = sv.BoundingBoxAnnotator(thickness=3)
+        label_annotator = sv.LabelAnnotator(text_thickness=3,text_scale=2)
 
         annotated_image = bounding_box_annotator.annotate(
         scene=img_array, detections=detections)
