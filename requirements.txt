@@ -1,0 +1,6 @@
+streamlit
+ultralytics
+inference-sdk
+cvzone
+supervision
+inference
